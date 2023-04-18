@@ -19,10 +19,11 @@
 html {font-family: 'Poppins', sans-serif;background-color:#FFF}
 body {font-family: 'Poppins', sans-serif;overflow-x: hidden; background-color:#FFF; font-weight:300;font-style: normal; color: #000; font-size: var(--font_14)}
 a,a:hover,a:focus,i,input,button,input:focus,.transition {text-decoration: none;outline: none; transition-delay: 0s;transition-duration: 0.4s;transition-property: all;transition-timing-function: ease;box-shadow: none; color: #89959b}
-a{color: #000}
+a:link {cursor: pointer;}
+a{color: #000; }
 iframe {border: 0;outline: none;}
-::-moz-selection {background: var(--grey);text-shadow: none;color:var(--white)}
-::selection {background:var(--grey);text-shadow: none;color:var(--white)}
+::-moz-selection {background: var(--grey);text-shadow: none;color:var(--white); }
+::selection {background:var(--grey);text-shadow: none;color:var(--white); }
 img {max-width: 100%;border: none;outline: none;height: auto;}
 input,textarea {border-radius: 0;resize: none;}
 ul {padding: 0;margin: 0;}
@@ -41,19 +42,29 @@ svg,img { max-width: 100%; height: auto; }
 .ds-carrousel-div {padding-top: 5rem; padding-bottom: 5rem; height: auto;}
 
 .ds-header{ padding-top:5.5rem; padding-bottom: 9rem; position: relative;  }
-.ds-page-header{ padding-top:5.5rem; padding-bottom: 4rem; position: relative;  }
+.ds-header-index{ padding-top:0.5rem; padding-bottom: 9rem; position: relative;  }
+.ds-page-header{ padding-top:7rem; padding-bottom: 4rem; position: relative;  }
+
 .ds-logo{ text-align: center; }
 .ds-logo a{display: inline-block; color: #000; font-size:0.875rem; line-height: 1.75rem; text-transform: uppercase; letter-spacing:13px; font-weight: 400; border-bottom: 1px solid #cfcfcf; padding-bottom: 10px }
 .ds-logo a:hover {color: #89959b; transition: 0.5s;}
+
+.ds-logo-index{ margin-bottom: 6rem; margin-top: 4.5rem; text-align: center; }
+.ds-logo-index a{display: inline-block; color: #000; font-size:0.875rem; line-height: 1.75rem; text-transform: uppercase; letter-spacing:13px; font-weight: 400; border-bottom: 1px solid #cfcfcf; padding-bottom: 10px }
+.ds-logo-index a:hover {color: #89959b; transition: 0.5s;}
+
 .ds-closebutton{ position: absolute; left:0; right: 0; margin: 0 auto; margin-top:2.75rem;  border-radius: 100%; border: 1px solid #687278; width: 64px;height: 64px; line-height: 64px; color: #687278; font-size: 1.875rem }
 .ds-closebutton:hover{ background-color: #687278; color: #FFF; transition: 1s;  }
 .ri-close-line:hover{ padding: 15px; color: #FFF;  }
 .ds-pge-wrap{ margin-bottom:100px }
 .ds-sticky{position: sticky;top: 0; padding-top: 0px}
 
+.ds-lenguage {text-align: right; padding-top: 1rem;}
+.ds-lenguage a img {width:35px; padding-right: 10px;}
+
 .ds-left-section figure{ margin-bottom: 2.5rem }
 .ds-socail span{ display: block; font-weight: 600; font-size: 1.125rem  }
-.ds-socail ul{ list-style: none; padding: 0; margin: 0; display: flex; align-items: center;font-size: 1.125rem }
+.ds-socail ul{ list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; align-items: center;font-size: 1.125rem }
 .ds-socail ul li{ margin-right: 20px; margin-top: 18px;}
 .ds-socail ul li:last-child{ margin-right: 0 }
 .ds-socail ul li a:hover{color: #89959b; text-decoration: underline; text-underline-offset: 1.5px; }
@@ -62,6 +73,8 @@ svg,img { max-width: 100%; height: auto; }
 
 .ds-heading{ font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 3rem; line-height: 3.6875rem; margin-bottom:45px }
 .ds-headingSm{ font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 2.1rem; line-height: 2.75rem; margin-bottom:25px }
+.ds-headingSm-sm{ font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 1.75rem; line-height: 2.75rem; margin-bottom:25px }
+
 .ds-info-sectio-wrp{ padding-left:2.5rem  }
 .ds-info-sectio p,.ds-project-details p{font-size: 1.125rem; line-height: 2.25rem; margin-bottom: 20px}
 
@@ -102,27 +115,28 @@ svg,img { max-width: 100%; height: auto; }
 /*-------------------------------------------------------------------------------
  	@media 
 -------------------------------------------------------------------------------*/
+
 @media (max-width: 767px) {
-.ds-header{padding-top: 2.875rem;padding-bottom: 3.125rem;}
-.ds-info-sectio-wrp{ padding-left: 0; padding-top: 7rem  }
-.ds-heading{font-size: 2rem;line-height: 2.6875rem;margin-bottom: 20px;}
-.ds-info-list-section ul li{width: 100%}
-.ds-info-list-section{margin-top: 2.625rem;}
-.ds-pge-wrap{ margin-bottom: 50px }
-.ds-footer{padding-bottom: 80px;}
-.ds-closebutton{ position: static; display: block; }
-.ds-main-image{margin-bottom: 3.0625rem;}
-.ds-pr-info{ margin-bottom: 10px }
-.ds-list-image{margin-top: 2.375rem;}
-.ds-margin-bottom-70{ margin-bottom:2.375rem;  }
-.ds-carrousel-sect {margin-top: 5rem; }
-.ds-carrousel-div {width: 100%;}
-.ds-socail-carrousel { width: 100%; padding-bottom: 2rem; }
-.row { margin-left: 0; margin-right: 0; padding-left: 0; padding-right: 0;}
-.ds-page-image{ margin-bottom: 5rem; position: relative; height: 170px;}
-.ds-page-image img{ height: 100%; width: auto; object-fit: cover;}
-.ds-page-imgtxt h2{font-size: 1.5rem; font-weight: 300; line-height: 2.5rem; text-align: center; letter-spacing:2.5px; width: 70%; left: 15%;}
-}
+	.ds-header{padding-top: 2.875rem;padding-bottom: 3.125rem;}
+	.ds-info-sectio-wrp{ padding-left: 0; padding-top: 7rem  }
+	.ds-heading{font-size: 2rem;line-height: 2.6875rem;margin-bottom: 20px;}
+	.ds-info-list-section ul li{width: 100%}
+	.ds-info-list-section{margin-top: 2.625rem;}
+	.ds-pge-wrap{ margin-bottom: 50px }
+	.ds-footer{padding-bottom: 80px;}
+	.ds-closebutton{ position: static; display: block; }
+	.ds-main-image{margin-bottom: 3.0625rem;}
+	.ds-pr-info{ margin-bottom: 10px }
+	.ds-list-image{margin-top: 2.375rem;}
+	.ds-margin-bottom-70{ margin-bottom:2.375rem;  }
+	.ds-carrousel-sect {margin-top: 5rem; }
+	.ds-carrousel-div {width: 100%;}
+	.ds-socail-carrousel { width: 100%; padding-bottom: 2rem; }
+	.row { margin-left: 0; margin-right: 0; padding-left: 0; padding-right: 0;}
+	.ds-page-image{ margin-bottom: 5rem; position: relative; height: 170px;}
+	.ds-page-image img{ height: 100%; width: auto; object-fit: cover;}
+	.ds-page-imgtxt h2{font-size: 1.5rem; font-weight: 300; line-height: 2.5rem; text-align: center; letter-spacing:2.5px; width: 70%; left: 15%;}
+	}
 
 
 @media (min-width: 768px) and (max-width: 991px) {
